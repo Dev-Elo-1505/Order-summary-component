@@ -20,9 +20,10 @@ body {
   font-size: 1.6rem;
   background-image: url("./images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
   background-attachment: fixed;
+  background-color: hsl(225, 100%, 94%);
 }
 
 img {
@@ -85,13 +86,21 @@ h2 {
   color: hsl(223, 47%, 23%);
 }
 
-.plan p:first-of-type span{
+.plan p:first-of-type span {
   font-weight: normal;
   color: hsl(224, 23%, 55%);
 }
 
 .plan p:last-of-type {
   color: hsl(245, 75%, 52%);
+}
+
+.plan p:last-of-type a {
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.plan p:last-of-type a:hover {
+  text-decoration: none;
 }
 
 .cta-btn {
@@ -111,12 +120,22 @@ h2 {
   color: #fff;
   font-weight: 600;
   box-shadow: 0 4px 8px 0 hsl(224, 23%, 55%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cta-btn button:hover {
+  opacity: 0.8;
 }
 
 .cta-btn a {
   text-decoration: none;
   color: hsl(224, 23%, 55%);
   font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+
+.cta-btn a:hover {
+  color: hsl(223, 47%, 23%);
 }
 
 .attribution {
